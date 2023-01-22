@@ -11,6 +11,7 @@ import telegram.ext as tg
 
 async def start(update: Update, context: tg.ContextTypes.DEFAULT_TYPE) -> None:
   await update.message.reply_text("Hello!! I am ready to go.. The question is... Are you.... I like using a lot of dots.....")
+  await update.message.reply_animation('assets/typing.gif')
   await update.message.reply_text("Type '/help' to.. get the list of commands....")
 
 async def help(update: Update, context: tg.ContextTypes.DEFAULT_TYPE) -> None:
